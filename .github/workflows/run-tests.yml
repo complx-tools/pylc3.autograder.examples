@@ -29,3 +29,4 @@ jobs:
             mkdir build && cd build
             cmake ..
             ctest -VV
+            ls /usr/lib/x86_64-linux-gnu
