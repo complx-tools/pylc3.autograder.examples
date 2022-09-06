@@ -21,6 +21,7 @@ jobs:
             sudo add-apt-repository -y ppa:tricksterguy87/complx
             sudo apt update -qq
             sudo apt install -y castxml libpython3-dev libboost-python-dev liblc3-dev liblc3-plugins
+            ls /usr/lib/x86_64-linux-gnu
       - name: Install python packages
         run: |
             pip3 install six wheel scikit-build pygccxml pyplusplus pylc3.core pylc3.autograder unittest2 parameterized
@@ -29,4 +30,3 @@ jobs:
             mkdir build && cd build
             cmake ..
             ctest -VV
-            ls /usr/lib/x86_64-linux-gnu
