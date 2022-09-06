@@ -1,6 +1,8 @@
 ; simple_io.asm
 ; A basic assembly program that continuously reads input from console input and
 ; only echos back uppercase A-Z. Input terminates with a newline character '\n'
+; remove.
+;@plugin filename=lc3_udiv vector=x80
 .orig x3000
     NEXT GETC
     ADD R1, R0, -10
