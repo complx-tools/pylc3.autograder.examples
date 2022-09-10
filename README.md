@@ -16,6 +16,8 @@ The examples should be viewed in the following order:
 9) [lc3_calling_convention_recursive] - This example shows how to test a subroutine that's recursive. More importantly how to test that subroutines are calling other subroutines correctly with the correct set of parameters.
 10) [subroutine_pass_by_regs] - This example shows how to test a subroutine using pass by registers rather than the lc3 calling convention. The example is a pass by registers version of the above example.
 
+**Final note**: Please be aware that pylc3.autograder doesn't output a grade. The framework will produce a JSON file (see the examples for how this is formatted). A script can then parse the JSON and then assign points per each assertion passed or failed.
+
 [simple_add]: <simple_add>
 [simple_sum]: <simple_sum>
 [simple_string]: <simple_string>
